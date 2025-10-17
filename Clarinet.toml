@@ -8,20 +8,20 @@ cache_dir = './.cache'
 [[project.requirements]]
 contract_id = 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard'
 
-[contracts.amm]
-path = 'contracts/amm.clar'
+[contracts.amm-v7]
+path = 'contracts/amm-v7.clar'
 clarity_version = 3
 epoch = 3.0
 
-[contracts.mock-token]
-path = 'contracts/mock-token.clar'
+[contracts.mock-token-9]
+path = 'contracts/mock-token-9.clar'
 clarity_version = 3
 epoch = 3.0
 
-[contracts.mock-token-2]
-path = 'contracts/mock-token.clar'
-clarity_version = 2
-epoch = 2.5
+[contracts.mock-token-10]
+path = 'contracts/mock-token-10.clar'
+clarity_version = 3
+epoch = 3.0
 
 [repl.analysis]
 passes = ['check_checker']

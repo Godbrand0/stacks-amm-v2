@@ -48,6 +48,9 @@ genesis:
 plan:
   batches:
     - id: 0
+      transactions: []
+      epoch: "2.0"
+    - id: 1
       transactions:
         - emulated-contract-publish:
             contract-name: sip-010-trait-ft-standard
@@ -55,24 +58,27 @@ plan:
             path: "./.cache/requirements/SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard.clar"
             clarity-version: 1
       epoch: "2.1"
-    - id: 1
-      transactions:
-        - emulated-contract-publish:
-            contract-name: mock-token-2
-            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            path: contracts/mock-token.clar
-            clarity-version: 2
-      epoch: "2.5"
     - id: 2
+      transactions: []
+      epoch: "2.1"
+    - id: 3
       transactions:
         - emulated-contract-publish:
-            contract-name: amm
+            contract-name: amm-v7
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            path: contracts/amm.clar
+            path: contracts/amm-v7.clar
             clarity-version: 3
         - emulated-contract-publish:
-            contract-name: mock-token
+            contract-name: mock-token-10
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
-            path: contracts/mock-token.clar
+            path: contracts/mock-token-10.clar
             clarity-version: 3
+        - emulated-contract-publish:
+            contract-name: mock-token-9
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/mock-token-9.clar
+            clarity-version: 3
+      epoch: "3.0"
+    - id: 4
+      transactions: []
       epoch: "3.0"
